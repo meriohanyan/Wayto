@@ -30,6 +30,17 @@ nav .nav {
   font-size: 16px;
   line-height: 24px;
 }
+@media screen and (max-width: 520px) {
+  nav .nav .mobile__menu__btn svg {
+    display: block;
+  }
+  nav .nav .menu {
+    display: none;
+  }
+}
+nav .nav .mobile__menu__btn svg {
+  display: none;
+}
 nav .nav .menu ul {
   display: flex;
   gap: 44px;
@@ -60,165 +71,297 @@ nav .nav .buttons #signup {
   nav .nav .menu ul li {
     font-size: 14px;
   }
-  nav .buttons {
+  nav .nav .buttons {
     gap: 15px;
   }
 }
 
-header .header .heading {
-  width: 100%;
-  height: 220px;
-  margin-top: 93px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 62px;
-  box-sizing: border-box;
+header .header {
+  margin: 100px auto 0px auto;
 }
-header .header .heading h1 {
-  font-family: "Manrope-Regular";
-  font-size: 90px;
-  line-height: 110px;
+header .header h1 {
+  max-width: 1100px;
+  font-size: min(100px, max(50px + 2vw));
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: 7px;
+  margin: auto;
   text-align: center;
-  color: #000000;
-  width: 100%;
+  line-height: 100px;
+  letter-spacing: 7px;
 }
-header .header .header__text {
-  width: 753px;
-  height: 192px;
-  margin-right: 223px;
-  margin-left: 224px;
-  margin-bottom: 45px;
-}
-header .header .header__text p {
-  font-family: "Manrope-Regular";
-  font-size: normal;
+header .header p {
+  max-width: 753px;
+  font-size: min(36px, max(18px + 2vw));
   font-weight: 400;
-  font-size: 42px;
+  letter-spacing: 1px;
   line-height: 48px;
   text-align: center;
-  letter-spacing: 1.5px;
-  color: #000000;
-  width: 100%;
+  margin: 62px auto 45px auto;
 }
 header .header .try {
-  width: 761px;
-  height: 80px;
+  max-width: 761px;
   background-color: #000000;
-  border-radius: 15px;
   box-shadow: 0px 208px 58px rgba(0, 0, 0, 0.01);
-  margin: auto;
-  margin-left: 220px;
-  margin-right: 220px;
-  margin-bottom: 40px;
-  text-align: center;
-  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0px auto 42px auto;
 }
 header .header .try p {
   color: #D6FC52;
-  font-family: "Manrope-Regular";
   font-weight: 400;
-  font-size: 41px;
+  font-size: 35px;
   line-height: 58px;
   letter-spacing: 0.8px;
 }
 header .header .trial {
-  width: 386px;
-  margin: auto;
-}
-header .header .trial p {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 15px;
   color: #000000;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+@media screen and (max-width: 840px) {
+  header .header h1 {
+    font-size: min(80px, max(40px + 2vw));
+    line-height: 60px;
+  }
+  header .header p {
+    font-size: min(30px, max(15px + 2vw));
+    margin: 35px auto 45px auto;
+  }
+  header .header .try {
+    max-width: 500px;
+  }
+  header .header .try p {
+    font-size: 25px;
+  }
+  header .header .trial {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 520px) {
+  header .header h1 {
+    font-size: min(70px, max(35px + 2vw));
+    line-height: 45px;
+  }
+  header .header p {
+    font-size: min(26px, max(13px + 2vw));
+    margin: 30px auto 40px auto;
+  }
+  header .header .try {
+    max-width: 300px;
+  }
+  header .header .try p {
+    font-size: 20px;
+  }
+  header .header .trial {
+    font-size: 15px;
+  }
 }
 
-main .main .super__easy {
-  margin-top: 500px;
+main .main {
+  margin-top: 300px;
 }
 main .main .super__easy h3 {
-  color: #000000;
-  font-size: 101px;
+  max-width: 1100px;
+  font-size: min(100px, max(50px + 2vw));
   font-weight: 400;
-  letter-spacing: 5px;
+  margin: auto;
   text-align: center;
+  line-height: 100px;
+  letter-spacing: 7px;
 }
 main .main .super__easy p {
-  margin-left: 229px;
-  margin-right: 229px;
-  color: #000000;
+  max-width: 753px;
+  font-size: min(36px, max(18px + 2vw));
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 48px;
   text-align: center;
-  font-size: 42px;
+  margin: 62px auto 45px auto;
 }
 main .main .super__easy img {
   width: 100%;
 }
 main .main .super__fast {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 main .main .super__fast h3 {
-  color: #000000;
-  font-size: 101px;
+  max-width: 1100px;
+  font-size: min(100px, max(50px + 2vw));
   font-weight: 400;
-  letter-spacing: 5px;
+  margin: auto;
   text-align: center;
+  line-height: 100px;
+  letter-spacing: 7px;
 }
 main .main .super__fast p {
-  margin-left: 229px;
-  margin-right: 229px;
-  color: #000000;
+  max-width: 753px;
+  font-size: min(36px, max(18px + 2vw));
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 48px;
   text-align: center;
-  font-size: 42px;
+  margin: 62px auto 45px auto;
 }
 main .main .super__fast img {
   width: 100%;
 }
 main .main .low__cost {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 main .main .low__cost h3 {
-  color: #000000;
-  font-size: 101px;
+  max-width: 1100px;
+  font-size: min(100px, max(50px + 2vw));
   font-weight: 400;
-  letter-spacing: 5px;
+  margin: auto;
   text-align: center;
+  line-height: 100px;
+  letter-spacing: 7px;
 }
 main .main .low__cost p {
-  margin-left: 229px;
-  margin-right: 229px;
-  color: #000000;
+  max-width: 753px;
+  font-size: min(36px, max(18px + 2vw));
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 48px;
   text-align: center;
-  font-size: 42px;
+  margin: 62px auto 45px auto;
 }
 main .main .low__cost img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  main .main .super__easy h3 {
-    font-size: 80px;
+main .main .meet {
+  margin-top: 70px;
+}
+main .main .meet h3 {
+  max-width: 1100px;
+  font-size: min(100px, max(50px + 2vw));
+  font-weight: 400;
+  margin: auto;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: 7px;
+}
+main .main .meet img {
+  display: block;
+  max-width: 400px;
+  margin: auto;
+}
+main .main .meet .try2 {
+  max-width: 761px;
+  background-color: #000000;
+  box-shadow: 0px 208px 58px rgba(0, 0, 0, 0.01);
+  border-radius: 15px;
+  margin: 0px auto 42px auto;
+  text-align: center;
+}
+main .main .meet .try2 p {
+  color: #D6FC52;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+}
+main .main .meet .trial2 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+@media screen and (max-width: 840px) {
+  main .main .meet h3 {
+    font-size: min(80px, max(40px + 2vw));
+    line-height: 60px;
   }
-  main .main .super__easy p {
-    font-size: 30px;
-    width: 100%;
+  main .main .meet .try2 {
+    max-width: 500px;
+  }
+  main .main .meet .try2 p {
+    font-size: 25px;
+  }
+  main .main .meet .trial2 {
+    font-size: 18px;
+  }
+  main .main .meet img {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 520px) {
+  main .main .meet h3 {
+    font-size: min(70px, max(35px + 2vw));
+    line-height: 45px;
+  }
+  main .main .meet .try2 {
+    max-width: 300px;
+  }
+  main .main .meet .try2 p {
+    font-size: 20px;
+  }
+  main .main .meet .trial2 {
+    font-size: 15px;
+  }
+  main .main .meet img {
+    max-width: 300px;
+  }
+}
+main .main .speacial__offer {
+  margin-top: 79px;
+}
+main .main .speacial__offer div {
+  width: 100%;
+  background-color: #000000;
+}
+main .main .speacial__offer div p {
+  color: #D6FC52;
+  font-family: "PermanentMarker-Regular";
+  font-size: 62px;
+  line-height: 161px;
+  font-weight: 400;
+  margin: auto 30px auto 500px;
+}
+main .main .speacial__offer p {
+  max-width: 753px;
+  font-size: min(36px, max(18px + 2vw));
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 48px;
+  text-align: center;
+  margin: 62px auto 45px auto;
+}
+@media screen and (max-width: 1050px) {
+  main .main .speacial__offer div p {
     margin: auto;
   }
-  main .main .super__fast h3 {
-    font-size: 80px;
+}
+@media screen and (max-width: 840px) {
+  main .main .speacial__offer p {
+    font-size: min(30px, max(15px + 2vw));
+    margin: 35px auto 45px auto;
   }
-  main .main .super__fast p {
-    font-size: 30px;
-    width: 100%;
-    margin: auto;
+}
+@media screen and (max-width: 840px) and (max-width: 520px) {
+  main .main .speacial__offer {
+    font-size: min(26px, max(13px + 2vw));
+    margin: 30px auto 40px auto;
   }
-  main .main .low__cost h3 {
-    font-size: 80px;
+}
+@media screen and (max-width: 840px) {
+  main .main .super__easy h3, main .main .super__fast h3, main .main .low__cost h3 {
+    font-size: min(80px, max(40px + 2vw));
+    line-height: 60px;
   }
-  main .main .low__cost p {
-    font-size: 30px;
-    width: 100%;
-    margin: auto;
+  main .main .super__easy p, main .main .super__fast p, main .main .low__cost p {
+    font-size: min(30px, max(15px + 2vw));
+    margin: 35px auto 45px auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  main .main .super__easy h3, main .main .super__fast h3, main .main .low__cost h3 {
+    font-size: min(70px, max(35px + 2vw));
+    line-height: 45px;
+  }
+  main .main .super__easy p, main .main .super__fast p, main .main .low__cost p {
+    font-size: min(26px, max(13px + 2vw));
+    margin: 30px auto 40px auto;
   }
 }/*# sourceMappingURL=style.css.map */
