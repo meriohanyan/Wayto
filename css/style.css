@@ -364,4 +364,63 @@ main .main .speacial__offer p {
     font-size: min(26px, max(13px + 2vw));
     margin: 30px auto 40px auto;
   }
+}
+
+footer {
+  margin-top: 55px;
+}
+footer .footer .footer__top {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+footer .footer .footer__top .footer__menu ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+footer .footer .footer__top .footer__menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+}
+@media screen and (max-width: 600px) {
+  footer .footer .footer__top {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 545px) {
+  footer .footer .footer__top {
+    gap: 15px;
+  }
+  footer .footer .footer__top .footer__logo svg {
+    width: 90px;
+  }
+  footer .footer .footer__top .footer__menu ul {
+    padding-left: 0px;
+  }
+}
+footer .footer hr {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 1px;
+}
+footer .footer .footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .footer__bottom .boxes {
+  display: flex;
+  gap: 5px;
+}
+footer .footer .footer__bottom .boxes div {
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+}
+footer .footer .footer__bottom .boxes div {
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
 }/*# sourceMappingURL=style.css.map */
